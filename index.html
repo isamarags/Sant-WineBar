@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Santé Wine Bar</title>
+        <link rel="shortcut icon" href="imagens/shortcut icon.png">
+        <meta name="author" content="Isamara Galvão">
+        <meta name="keywords" content="restaurante, vinho, wine, bar, food, comida">
+        <meta name="description" content="Restaurante e bar, com diversas variedades de comida.">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Annie+Use+Your+Telescope&family=Gloria+Hallelujah&family=Handlee&family=Kaushan+Script&family=Roboto:ital,wght@0,300;1,300&family=Seaweed+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <a class="a-menu" href="#">HOME</a>
+            <a class="a-menu" href="#pag-orestaurante">O RESTAURANTE</a>
+            <a class="a-menu" href="#pag-cardapio">CARDÁPIO</a>
+            <a class="a-menu" href="#pag-delivery">DELIVERY</a>
+        </nav>
+        <header>
+            <img src="imagens/banner com texto.png" alt="banner restaurante fictício Santé Wine Bar">
+        </header>
+        <article id="pag-orestaurante">
+            <h1>O Restaurante</h1>
+            <p> <strong><span id="txt-preto"> "Santé Wine Bar"</span></strong>, considerado um dos <em>melhores</em> do Brasil, conhecido por unir o melhor da cozinha brasileira. Sendo um restaurante bar, o Santé Wine Bar possui um cardápio super amplo e variado, com um ambiente muito agradável e comida e bebidas saborosas e diferenciadas, feitos com alta qualidade.</p>
+            <p>Por favor, se beber, não dirija.</p>
+            <p>A VENDA E CONSUMO DE BEBIDAS ALCÓOLICAS É PROIBIDO PARA MENORES DE 18 ANOS.</p>
+        </article>
+        <section id="pag-cardapio">
+            <h2>Cardápio</h2>
+            <p>Alguns dos principais pratos da casa:</p>
+                <div id="container">
+                    <div class="card">
+                        <img class="img-cardapio" src="imagens/grilled meat and veggies.jpg" alt="Carne grelhada com vegetais"/>
+                        <div class="card-content">
+                            <h3>Carne grelhada com vegetais</h3>
+                            <p>R$60</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="img-cardapio"  src="imagens/chrimp.png" alt="Camarão ao alho e óleo com limões"/>
+                        <div class="card-content">
+                            <h3>Camarão c/ alho e limão</h3>
+                            <p>R$45</p>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <img class="img-cardapio"  src="imagens/cheeseburger.png" alt="Cheeseburger"/>
+                        <div class="card-content">
+                            <h3>Cheeseburger</h3>
+                            <p>R$35</p>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <img class="img-cardapio"  src="imagens/salada com guacamole1.jpg" alt="Salada com guacamole"/>
+                        <div class="card-content">
+                            <h3>Salada com guacamole</h3>
+                            <p>R$30</p>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <img class="img-cardapio"  src="imagens/desert1.jpg" alt="Cheesecake com framboesa"/>
+                        <div class="card-content">
+                            <h3>Cheesecake com framboesa</h3>
+                            <p>R$12</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="pag-agendamentos">
+            <h2>Delivery</h2>
+            <p>Faça o seu pedido:</p>
+
+            <form name="" method="" action="">
+                <label for="nome">Nome:</label>
+                    <input id="nome" type="text" name="nome_completo" placeholder="Digite o seu nome completo" required="true"/>
+
+                <label for="e-mail">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="nomeusuario@nome.com"/>
+
+                <label for="nivel">Produto:</label>
+                    <select name="nivel" id="nivel">
+                        <option value="">Selecione</option>
+                        <option value="Carne">Carne grelhada com vegetais</option>
+                        <option value="Camarão">Camarão com limão</option>
+                        <option value="Cheeseburger">Cheeseburger</option>
+                        <option value="Salada">Salada com guacamole</option>
+                        <option value="Cheesecake">Cheesecake</option>
+                    </select> 
+
+                <div>
+                    <label for="aulas">Quantidade:</label>
+                    <input type="number" name="quantidade" min="1" max="10" step="1" id="quantidade" placeholder="Somente números">
+                </div>
+
+                <fieldset>
+                    <legend>Forma de retirada: </legend>
+                    <input type="radio" name="retirada" value="delivery" id="delivery"/> 
+                        <label for="delivery">Delivery</label> <br>
+                    <input type="radio" name="retirada" value="local" id="local"> 
+                        <label for="local">Retirar no Local</label>
+                </fieldset>
+
+                <label for="msg">Mensagem: </label> 
+                    <textarea name="" id="msg" cols="61" rows="4">
+                    </textarea>
+
+                <div id="botoes-form">
+                    <input type="submit" name="btn-agendar" value="FAZER PEDIDO"/>
+                    <input type="reset" name="btn-cancelar" value="CANCELAR"/>
+                </div>
+            </form>
+        </section>
+        
+        <footer>
+            <p> Desenvolvido por <a href="https://www.linkedin.com/in/isamarags/" target="_blank"> Isamara Galvão</a> - 2021
+            </p>
+        </footer>
+    </body>
+</html>
