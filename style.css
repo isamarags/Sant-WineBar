@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Annie+Use+Your+Telescope&family=Gloria+Hallelujah&family=Handlee&family=Kaushan+Script&family=Roboto:ital,wght@0,300;1,300&family=Seaweed+Script&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -15,8 +16,8 @@ header, img{
 
 nav{
     background-color: rgba(43, 36, 29, 1);
-    text-align: right;
-    padding: 20px;
+    text-align: center;
+    padding: 10px;
 }
 
 a{
@@ -25,7 +26,7 @@ a{
 }
 
 .a-menu{
-    margin: 10px 17px;
+    margin-right: 10px;
     font-weight: bold;
 }
 
@@ -45,24 +46,23 @@ article{
 
 h1{
     color: #b3935d;
-	text-align: left;
-    font-size: 200%;
+	text-align: center;
+    font-size: 10000;
     font-family: 'Gloria Hallelujah', cursive;
     margin-bottom: 30px;
 }
 
 h2{
     color: #b3935d;
-    font-size: :150%;
     font-family: 'Handlee', cursive;
     margin-bottom: 15px;
 }
 
 p{
-    text-align: justify;
-    font: 1.2rem 'Roboto', sans-serif;
-    color: #777;
-    line-height: 30px;
+	font: 1.2rem 'Roboto', sans-serif;
+	color: #777;
+	text-align: justify;
+	line-height: 30px;
 }
 
 #txt-preto{
@@ -73,22 +73,53 @@ section{
     padding: 20px;
 }
 
+#pag-opcoes{
+	background-color: #e2e2e2;
+}
+
+#pag-opcoes h2{
+    color:#b3935d;
+}
+
+#pag-opcoes p{
+    color: #777;
+    margin-top: 10px;
+}
+
 .img-cardapio{
     width: 250px;
     height: 250px;
 }
 
+ul{
+    font-family: 'Roboto', sans-serif;
+    color: #777;
+    list-style-type: square;
+    padding: 15px 40px;
+}
+
+li{
+    color: #777;
+    font: 1rem 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+#pag-cardapio{
+
+}
+
 #container{
     display: flex;
-    margin: 10px 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .card{
     background-color: #3a3a3a;
     margin: 7px;
     width: 50%;
-    border-radius: 5px 15px;
-    box-shadow: 2px 8px 12px rgb(0, 0, 0); 
+    border-radius: 5px 30px;
+    box-shadow: 2px 8px 12px rgb(0, 0, 0);
     transition: 0.5s;
 }
 
@@ -98,7 +129,6 @@ section{
 
 .card-content{
     padding: 10px;
-    column-count: 2;
 }
 
 .card-content p{
@@ -109,17 +139,76 @@ section{
 }
 
 h3{
-    font: 1.5rem 'Amatic SC';
+    font: 1.6rem 'Amatic SC';
     color: rgb(136, 136, 136);
     text-align: center;
+}
+
+#pag-saibamais{
 
 }
+
+#pag-saibamais p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#container-saibamais{
+    display: flex;
+}
+
+.coluna-saibamais{
+    padding: 25px;
+}
+
+.container-img{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-icones{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+video{
+    width: 400px;
+}
+
+footer{
+    background-color: rgb(34, 31, 28);
+    padding: 15px;
+}
+
+footer p{
+    text-align: center;
+    color: gray;
+}
+
+footer a{
+    text-align: center;
+    color: rgb(187, 187, 187);
+}
+
+footer a:hover{
+    color: #EFDAB7;
+}
+
+/*pagina agendamentos*/
 
 #pag-agendamentos{
     color: rgb(92, 92, 92);
 }
 
+#pag-agendamentos h1{
+    color: darkslategray;
+}
+
 #pag-agendamentos p{
+    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -135,7 +224,7 @@ input, select, textarea{
     padding-left: 5px;
     box-sizing: border-box;
     border: 1px solid rgb(218, 218, 218);
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(235, 235, 235);
     color: darkslategray;
 }
 
@@ -154,6 +243,10 @@ fieldset{
     border: 1px solid rgb(209, 209, 209);
     margin-bottom: 10px;
     padding: 10px;
+}
+
+#data-hora-num{
+    display: flex;
 }
 
 input[type="radio"], input[type="checkbox"]{
@@ -180,34 +273,4 @@ input[type="submit"], input[type="reset"]{
 
 input[type="reset"]{
 	background-color: #b3935d;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-footer{
-    background-color: rgb(34, 31, 28);
-    padding: 15px;
-}
-
-footer p{
-    text-align: center;
-    color: gray;
-}
-
-footer a{
-    text-align: center;
-    color: rgb(187, 187, 187);
-}
-
-footer a:hover{
-    color: #EFDAB7;
 }

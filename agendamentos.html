@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Santé Wine Bar</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Isamara Galvão">
+        <meta name="keywords" content="restaurante, vinho, wine, bar, food, comida">
+        <meta name="description" content="Restaurante e bar, com diversas variedades de comida.">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Annie+Use+Your+Telescope&family=Gloria+Hallelujah&family=Handlee&family=Kaushan+Script&family=Roboto:ital,wght@0,300;1,300&family=Seaweed+Script&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="img/shortcut icon.png">
+    </head>
+    <body>
+        <header>
+            <img src="img/banner com texto.png" alt="banner de um cheeseburger">
+        </header>
+            <nav>
+                <a class="a-menu" href="index.html">INÍCIO</a>&nbsp&nbsp
+                <a class="a-menu" href="index.html#pag-orestaurante">O RESTAURANTE</a>&nbsp&nbsp
+                <a class="a-menu" href="index.html#pag-opcoes">OPÇÕES</a>&nbsp&nbsp
+                <a class="a-menu" href="index.html#pag-cardapio">CARDÁPIO</a>&nbsp&nbsp
+                <a class="a-menu" href="index.html#pag-saibamais">SAIBA MAIS</a>&nbsp&nbsp
+                <a class="a-menu" href="#">AGENDAMENTOS</a>&nbsp
+            </nav>
+
+        <section id="pag-agendamentos">
+            <h1>Agendamentos
+            </h1>
+            <p> Agende agende seu pedido.
+            </p>
+
+            <form name="" method="" action="">
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" name="nome_completo" placeholder="Digite seu nome completo" required="true" autofocus/>
+
+                <label for="e-mail">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="nomeusuario@nome.com"/>
+
+                <label for="senha">Senha para retirada:</label>
+                <input type="password" name="senha" id="senha" placeholder="Código do pedido">
+
+                <label for="celular">Celular:</label>
+                <input type="tel" name="celular" id="celular" placeholder="(00)00000-0000" pattern=“^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$” >
+
+                <div id="data-hora-num">
+                    <div>
+                    <label for="data">Data de entrega:</label>
+                    <input type="date" name="data" id="data">
+                    </div>
+
+                    <div>
+                    <label for="hora">Horário:</label>
+                    <input type="time" name="horario" id="horario">
+                    </div>
+
+                    <div>
+                    <label for="aulas">Quantidade:</label>
+                    <input type="number" name="quantidade" min="1" max="10" step="1" id="quantidade">
+                    </div>
+                </div>
+                <label for="nivel">Bebida:</label>
+                <select name="nivel" id="nivel">
+                    <option value="">Selecione</option>
+                    <option value="Refrigerante">Refrigerante</option>
+                    <option value="sucos">Suco</option>
+                    <option value="vinho">Vinho</option>
+                    <option value="outro">Outro</option>
+                </select> 
+
+                <fieldset>
+                    <legend>Temperatura da bebida: </legend>
+                    <input type="radio" name="temperatura" value="gelado" id="gelado"/> 
+                        <label for="gelado">Gelado</label> <br>
+                    <input type="radio" name="temperatura" value="natural" id="natural"> 
+                        <label for="natural">Natural</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Cardapio: </legend>
+                    <input type="checkbox" name="carne" value="carne" id="carne">
+                        <label for="carne">Carne grelhada com vegetais</label> <br>
+                    <input type="checkbox" name="camarao" value="camarao" id="camarao">
+                        <label for="camarao">Camarão com limão </label> <br>
+                    <input type="checkbox" name="cheeseburger" value="cheeseburger" id="burger">
+                        <label for="burger">Cheeseburger</label> <br>
+                    <input type="checkbox" name="salada" value="salada" id="salada">
+                        <label for="salada">Salada com guacamole</label> <br>
+                    <input type="checkbox" name="cheesecake" value="cheesecake" id="cake">
+                        <label for="cake">Cheesecake</label> <br>
+                </fieldset>
+
+                <label for="msg">Mensagem: </label> 
+                <textarea name="" id="msg" cols="61" rows="4">
+                </textarea>
+
+                <div id="botoes-form">
+                <input type="submit" name="btn-agendar" value="AGENDAR"/>
+                <input type="reset" name="btn-cancelar" value="CANCELAR"/>
+                </div>
+
+            </form>
+            </section>
+            <footer>
+                <p > Desenvolvido por <a href="http://instagram.com/isamara.gs" target="_blank"> Isamara Galvão</a> - 2020
+                </p>
+            </footer>
+        </body>
+    </html>
